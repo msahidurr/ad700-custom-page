@@ -418,7 +418,7 @@ async function submitForm(formType) {
   btn.disabled = true;
 
   try {
-    var response = await fetch('send-form.php', {
+    var response = await fetch('https://formulario.ad700management.com/subvenciones-digitales-send-form.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
